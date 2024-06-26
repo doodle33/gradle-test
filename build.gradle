@@ -13,10 +13,17 @@ java {
 	}
 }
 
-repositories {
-//	jcenter()
-	mavenCentral()
+allprojects {
+	repositories {
+		mavenCentral()
+		// jcenter() is deprecated, consider removing it
+	}
 }
+
+//repositories {
+//	jcenter()
+////	mavenCentral()
+//}
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
